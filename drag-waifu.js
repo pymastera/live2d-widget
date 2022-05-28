@@ -1,10 +1,10 @@
-//待拖拽的元素
-let wf = document.getElementById('waifu');
-//获取元素与浏览器的宽高
-setTimeout(main,5000);//延时3秒执行页面跳转方法
-    
+//页面加载完毕后再执行
+window.addEventListener('load', function() {
+            main();  });    
 function main() {
-    
+        //待拖拽的元素
+        let wf = document.getElementById('waifu');
+        //获取元素与浏览器的宽高
 	let winWidth = window.innerWidth,
 		winHeight = window.innerHeight,
 		imgWidth = wf.offsetWidth,
